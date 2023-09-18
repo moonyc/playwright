@@ -34,7 +34,7 @@ export class LoginPage {
         await this.page.goto("http://zero.webappsecurity.com/")
     }
    
-    // login in strictu sensu method
+    // login in method
 
     async login(username: string, password: string) {
         await this.usernameInput.type(username)
