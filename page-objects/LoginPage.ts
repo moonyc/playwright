@@ -27,12 +27,7 @@ export class LoginPage {
            this.submitButton = page.locator('text=Sign in')
            this.errorMessage = page.locator('.alert-error')
        }
-    // Define login page methods
-
-    // goto method
-    async visit() {
-        await this.page.goto("http://zero.webappsecurity.com/")
-    }
+    // Define login page method
    
     // login in method
 

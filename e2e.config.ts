@@ -6,7 +6,7 @@ const config : PlaywrightTestConfig = {
     // in this case we want to specify the path to our tests
     testDir:'tests/e2e',
     use: {
-        headless: false,
+        headless: true,
         viewport: {width: 1280, height: 720},
         // demand for all the playwright functions, such as click type 
         // or wait for the selectors before it errors and times out
