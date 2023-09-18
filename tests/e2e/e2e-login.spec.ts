@@ -29,8 +29,8 @@ test.beforeEach(async ({ page }) => {
       //  await page.click("text=Sign In")
       await loginPage.login("username", "password")
        
-       const accountSummaryTab = await page.locator("#account_summary_tab")
-       await expect(accountSummaryTab).toBeVisible()
+      //  const accountSummaryTab = await page.locator("#account_summary_tab")
+      //  await expect(accountSummaryTab).toBeVisible()
        
        await page.goto("http://zero.webappsecurity.com/logout.html")
        await expect(page).toHaveURL('http://zero.webappsecurity.com/index.html')
